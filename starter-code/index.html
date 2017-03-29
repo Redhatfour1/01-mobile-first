@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Blog</title>
   <!-- TODO: Add a meta tag to properly set the viewport and initial scale -->
-
+  <meta name="viewport" content="initial-scale=2">
   <link rel="stylesheet" href="vendor/styles/normalize.css">
   <!-- REVIEW: Icon Fonts - Lets talk about why and how to use them best! -->
   <link rel="stylesheet" href="styles/icons.css">
@@ -23,7 +23,12 @@
     </section>
     <nav class="main-nav">
       <!-- TODO: Add a hamburger menu icon here. -->
-
+        <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use>
+        <symbol id="icon-menu" viewBox="0 0 32 32">
+        <title>menu</title>
+        <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+        </symbol>
+        </svg>
       <ul>
         <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
         <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
